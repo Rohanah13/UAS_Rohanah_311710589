@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silahkan Daftar Dahulu Untuk mellanjutkan"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_gradasi">
+        <TextView
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:text="DAFTAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"></RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_usernameRegister"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="352dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background"
+            android:drawableStart="@drawable/user"
+            android:hint="  Masukan Username" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_emailRegister"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="352dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background"
+            android:drawableStart="@drawable/email"
+            android:hint="  Masukan Email" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+        <EditText
+            android:id="@+id/edit_passwordRegister"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="352dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background"
+            android:drawableStart="@drawable/key"
+            android:hint="  Masukan Password" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_confPasswordRegister"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="352dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background"
+            android:drawableStart="@drawable/key"
+            android:password="true"
+            android:hint="  Masukan Password" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/loginRegister"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/background"
+                android:layout_gravity="center"
+                android:text="login"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="15dp"></RelativeLayout>
+            <Button
+                android:id="@+id/registerRegister"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/background"
+                android:layout_gravity="center"
+                android:text="Daftar"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
